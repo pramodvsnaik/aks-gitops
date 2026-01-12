@@ -18,8 +18,9 @@ jobs:
             SONAR_TOKEN: ${{secrets.SONAR_TOKEN}}
         with:
           args: >
-               -Dsonar.organiszation=pramodvsnaik
-               -Dsonar.projectKey=aks-gitops
+              -Dsonar.organization=pramodvsnaik
+              -Dsonar.projectKey=aks-gitops
+              -Dsonar.host.url=https://sonarcloud.io
             
           
  
