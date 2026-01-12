@@ -21,6 +21,22 @@ jobs:
               -Dsonar.organization=pramodvsnaik
               -Dsonar.projectKey=aks-gitops
               -Dsonar.host.url=https://sonarcloud.io
+
+
+      - name: Az Login
+        uses: Azure/login@v2.3.0
+        with:
+          client-id:
+          subscription-id:
+          tenant-id:
+          creds:
+
+      - name: Azure CLI Action
+        uses: Azure/cli@v2.2.0
+        with:
+          # Specify the script here
+          inlineScript: |
+            
             
           
  
